@@ -2,7 +2,7 @@
 
 
 int main() {
-    int n, m, aux, i, j = 0, repete, valor;
+    int n, m, aux, i, j, repete, valor;
     scanf("%d %d", &n, &m);
     int conjA[n], conjB[m], uniaoAB[n+m];
     aux = n;
