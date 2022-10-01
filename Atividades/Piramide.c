@@ -1,24 +1,15 @@
 #include <stdio.h>
 
 void modificaMatriz(int ordem, int matriz[ordem][ordem]) {
-    if (ordem%2 == 0) {
-        for (int t=1; t<ordem/2; t++) {
-            for (int i=t; i<ordem-t; i++) {
-                for (int j=t; j<ordem-t; j++) {
-                    matriz[i][j] += 1;
-                }
-            }
-        }
-    } else {
-        for (int t=1; t<=ordem/2; t++) {
-            for (int i=t; i<ordem-t; i++) {
-                for (int j=t; j<ordem-t; j++) {
-                    matriz[i][j] += 1;
-                }
+    for (int t=1; t<=ordem/2; t++) {
+        for (int i=t; i<ordem-t; i++) {
+            for (int j=t; j<ordem-t; j++) {
+                matriz[i][j] += 1;
             }
         }
     }
 }
+
 
 void printaMatriz(int lin, int col, int matriz[lin][col]) {
     for (int i=0; i<lin; i++) {
