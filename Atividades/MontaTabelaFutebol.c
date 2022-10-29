@@ -8,7 +8,6 @@ typedef struct {
 
 Time criaTime(char entrada[210]) {
     Time aux;
-    
 
     fgets(entrada, 210, stdin);
     strcpy(aux.nome, strtok(entrada, ";"));
