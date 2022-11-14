@@ -48,8 +48,8 @@ void destroyMatrix(Matrix **m) {
   free((*m)->mat);
   (*m)->mat = NULL;
   
-  *m = NULL;
   free(*m);
+  *m = NULL;
 }
 
 int main() {
